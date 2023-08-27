@@ -1,0 +1,68 @@
+Stopped at ~45 (Voltar um pouco pra recapitual e entender bem o CustomerQuery)
+https://www.youtube.com/watch?v=YGqCZjdgJJk&ab_channel=EnvatoTuts%2B
+
+
+*** Minhas Anotações ***
+
+1 - Migrations:
+Local: app/database/migrations/
+Aonde escrevemos os atributos do nosso modelo para ser criado na DB
+
+Após criar uma migration corremos o comando
+
+2 - Models
+Sao equivalentes as entidades no symfony
+
+hasMany -> quando pode estar vinculado com varias outras entidades
+belongsTo -> quando só pode estar vinculado com um "objeto" da outra entidade
+
+3 - Factories
+
+Local: app/database/factories/
+
+Equivalente as data fixtures do symfony, nesse exemplo usamos o faker pra gerar os dados aleatorios pra cada campo
+
+4 - Seeder
+
+Local: app/database/seeder/
+
+        exemplo de um bloco dentro do CustomerSeeder.php
+        Customer::factory()
+            ->count(25)
+            ->hasServices(10)
+            ->create();
+
+        Nesse caso, criamos 25 Customer com 10 Serviços cada.
+
+        Após isso no ServiceSeeder.php chamamos o CustomerSeeder
+
+                $this->call(
+                    [
+                        CustomerSeeder::class
+                    ]
+                );
+
+
+#### Feito tudo isso, basta correr ´php artisan migrate:fresh --seed´
+Este comando deve correr as migrações com os seeders
+
+----------------------------------------------------------------------------
+
+**** Versionamento ****
+
+Neste projeto usamos versionamentos, entao V1 será uma primeira versao e podemos criar novas rotas para V2, num possivel update.
+
+Normalmente so versionamos as rotas/controller e não os Models, pois os Models normalmente só sao adicionados campos em novas migrações
+
+
+*** Rotas ***
+
+As rotas definidas em app/routes/api.php levan /api na url automaticamente
+Como estamos versionando utilizamos a seguinte estrutura para definir as rotas dentro de V1
+
+Route::group(['prefix' => 'v1', 'namespace' => 'App\Http\Controllers\API\V1'], function (){
+    Route::apiResource('customers', \App\Http\Controllers\API\V1\CustomerController::class);
+    Route::apiResource('services', \App\Http\Controllers\API\V1\ServiceController::class);
+});
+
+O campo prefix é o que vai ser adicionado na url após /api, ficando /api/v1/ , 'namespace

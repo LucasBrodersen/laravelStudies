@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b8552ac4-65b5-4368-a9bc-3072d94f98d8" name="Changes" comment="pushing everything">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeception.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/restAPI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Console/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Exceptions/Handler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Controllers/API/V1/CustomerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Controllers/API/V1/ServiceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Middleware/TrimStrings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Middleware/TrustHosts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Middleware/ValidateSignature.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Requests/StoreCustomerRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Requests/StoreServiceRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Requests/UpdateCustomerRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Requests/UpdateServiceRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Resources/V1/CustomerCollection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Resources/V1/CustomerResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Resources/V1/ServiceCollection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Http/Resources/V1/ServiceResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Models/Customer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Models/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Models/Service.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Models/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Policies/CustomerPolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Policies/ServicePolicy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/app/Services/V1/CustomerQuery.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/artisan" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/bootstrap/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/app.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/broadcasting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/cache.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/cors.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/database.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/filesystems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/hashing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/logging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/mail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/queue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/sanctum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/session.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/config/view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/course.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/database/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/database/factories/CustomerFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/database/factories/ServiceFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/database/migrations/2023_08_11_142514_create_posts_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/database/migrations/2023_08_13_115007_create_customers_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/database/migrations/2023_08_13_115056_create_services_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/database/seeders/CustomerSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/database/seeders/ServiceSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/lang/en/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/lang/en/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/lang/en/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/lang/en/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/resources/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/resources/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/routes/api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/routes/channels.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/routes/console.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/routes/web.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/storage/framework/cache/data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/tests/CreatesApplication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/tests/TestCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAPI/vite.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/restAPI/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/restAPI/app/Http/Resources/V1/CustomerResource.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/restAPI/app/Models/Customer.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/restAPI/app/Models/Service.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/restAPI/database/migrations/2023_08_11_142514_create_posts_table.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
+    <include_path>
+      <path value="$PROJECT_DIR$/restAPI/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/league/config" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/spatie/laravel-ignition" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/spatie/flare-client-php" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/spatie/ignition" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/composer" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/jean85/pretty-package-versions" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/mongodb/mongodb" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/jenssegers/mongodb" />
+      <path value="$PROJECT_DIR$/restAPI/vendor/laravel/ui" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2TKgMDdu4NNpQbPJrqruZol7yLc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/lucasbrodersen/1laravelProjects/restAPI",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mongo"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="PHPUnit.phpunit.xml">
+    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/restAPI/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8552ac4-65b5-4368-a9bc-3072d94f98d8" name="Changes" comment="" />
+      <created>1690797135528</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690797135528</updated>
+      <workItem from="1690797136693" duration="2856000" />
+      <workItem from="1690809380539" duration="3342000" />
+      <workItem from="1690812734668" duration="5049000" />
+      <workItem from="1690821804304" duration="1434000" />
+      <workItem from="1690823740060" duration="536000" />
+      <workItem from="1691666241230" duration="825000" />
+      <workItem from="1691762163729" duration="304000" />
+      <workItem from="1691762478764" duration="2631000" />
+      <workItem from="1691927032273" duration="27000" />
+      <workItem from="1691927071094" duration="10286000" />
+      <workItem from="1693152489379" duration="213000" />
+      <workItem from="1693152718037" duration="5368000" />
+      <workItem from="1693177631241" duration="25000" />
+      <workItem from="1693178250870" duration="24000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pushing everything" />
+    <option name="LAST_COMMIT_MESSAGE" value="pushing everything" />
+  </component>
+</project>

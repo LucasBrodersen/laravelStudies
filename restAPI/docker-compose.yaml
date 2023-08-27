@@ -1,0 +1,21 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - PHP_VERSION=8.1
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/var/www/html
+    environment:
+      - "DB_CONNECTION=mongodb"
+      - "DB_HOST=clusterapilaravel.giq9ky7.mongodb.net"
+      - "DB_PORT="
+      - "DB_DATABASE=mainDatabase"
+      - "DB_USERNAME=lucasbrodersen"
+      - "DB_PASSWORD=159753"
+      - "JWT_SECRET=09PlECHYPCw9My+kRc/mqRj+jsqguxH4IfFowKrS4Sw="
+
