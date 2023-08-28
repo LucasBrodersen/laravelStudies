@@ -21,14 +21,17 @@ class CustomerController extends Controller
     public function index(Request $request)
     {
         $filter = new CustomersFilter();
-        $queryItems = $filter->transform($request);
+        $filterItems = $filter->transform($request);
 
-        if (count($queryItems) == 0){
-            return new CustomerCollection(Customer::paginate());
-        } else {
-            return new CustomerCollection(Customer::where($queryItems)->paginate());
+        $hasServices = $request->query('hasServices');
+
+        $customers = Customer::where($filterItems);
+
+        if ($hasServices){
+            $customers = $customers->with('services');
         }
 
+        return new CustomerCollection($customers->paginate()->appends($request->query()));
     }
 
     /**
@@ -60,6 +63,12 @@ class CustomerController extends Controller
      */
     public function show(Customer $customer)
     {
+        $hasServices = request()->query('hasServices');
+
+        if ($hasServices) {
+            return new CustomerResource($customer->loadMissing('services'));
+        }
+
         return new CustomerResource($customer);
     }
 
