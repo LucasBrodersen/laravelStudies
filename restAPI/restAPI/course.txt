@@ -97,4 +97,49 @@ public function toArray($request)
  a collection ja assume que existe uma resource
 
 
-*** Services ***
+*** Filters ***
+Local: app/Filters/V1/
+Nele temos o array de cada coluna e os Parametros que podem ser utilizados.
+
+Ex:         'postalCode' => ['eq', 'gt', 'lt'],
+No postalCode podemos ter equal, greaterThan, leesThan
+
+    protected $columnMap = [
+        'postalCode' => 'postal_code'
+    ];
+
+    Como é utilizado camelCase em json e não na DB, precisamos mapear
+    pra esses casos.
+
+    por fim, fazemos o mapeamento de cada operator
+
+        protected $operatorMap = [
+          'eq' => '=',
+          'lt' => '<',
+          'lte' => '<=',
+          'gt' => '>',
+          'gte' => '>='
+        ];
+
+    O metodo transform itera por cada parametro e verifica se
+    na query possue o tal operador,
+
+
+        public function transform(Request $request) {
+            $eloQuery = [];
+
+            foreach ($this->allowedParams as $param => $operators) {
+                $query = $request->query($param);
+                if (!isset($query)) {
+                    continue;
+                }
+                $column = $this->columnMap[$param] ?? $param;
+
+                foreach ($operators as $operator) {
+                    if (isset($query[$operator])){
+                        $eloQuery[] = [$column, $this->operatorMap[$operator], $query[$operator]];
+                    }
+                }
+            }
+            return $eloQuery;
+        }
