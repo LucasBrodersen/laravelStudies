@@ -143,3 +143,5 @@ No postalCode podemos ter equal, greaterThan, leesThan
             }
             return $eloQuery;
         }
+
+---- Explicação acima vai até os 45 min de video
