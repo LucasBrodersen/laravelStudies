@@ -1,4 +1,4 @@
-Stopped at ~1:05 (Voltar um pouco pra recapitual e entender bem o CustomerQuery)
+Stopped at ~1:33:41 (problema com o auth e mongodb, arrumar o user)
 https://www.youtube.com/watch?v=YGqCZjdgJJk&ab_channel=EnvatoTuts%2B
 
 

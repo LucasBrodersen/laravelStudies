@@ -4,12 +4,13 @@ namespace App\Http\Controllers\API\V1;
 
 use App\Filters\V1\ServicesFilter;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreServiceRequest;
-use App\Http\Requests\UpdateServiceRequest;
 use App\Models\Service;
 use App\Http\Resources\V1\ServiceResource;
 use App\Http\Resources\V1\ServiceCollection;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
+use App\Http\Requests\V1\BulkStoreServiceRequest;
+use App\Http\Requests\V1\StoreServiceRequest;
 
 class ServiceController extends Controller
 {
@@ -45,12 +46,22 @@ class ServiceController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreServiceRequest  $request
+     * @param \App\Http\Requests\V1\StoreServiceRequest
      * @return \Illuminate\Http\Response
      */
     public function store(StoreServiceRequest $request)
     {
-        //
+        return new ServiceResource(Service::create($request->all()));
+    }
+
+    public function bulkStore(BulkStoreServiceRequest $request)
+    {
+
+        $bulk = collect($request->all())->map(function($arr, $key) {
+           return Arr::except($arr, ['customerId', 'billedDate', 'paidDate']);
+        });
+
+        Service::insert($bulk->toArray());
     }
 
     /**
@@ -78,11 +89,11 @@ class ServiceController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateServiceRequest  $request
+     * @param \Illuminate\Http\Request $request
      * @param  \App\Models\Service  $service
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateServiceRequest $request, Service $service)
+    public function update(Request $request, Service $service)
     {
         //
     }
